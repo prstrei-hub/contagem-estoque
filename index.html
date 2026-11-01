@@ -39,9 +39,13 @@
 <dialog id="expDlg"><form method="dialog">
  <h3>Exportar para o Clipp</h3><p id="expInfo"></p>
  <label class="sw warn"><input type="checkbox" id="incl"> Incluir itens NÃO contados com quantidade 0</label>
- <p class="warn" id="inclWarn" hidden>⚠️ Atenção: se você atualizar os cadastros no Clipp, o estoque desses itens será ZERADO.</p>
+ <p class="warn" id="inclWarn" hidden style="background:#ffebee;border:2px solid #b71c1c;padding:8px;border-radius:6px;font-weight:bold"></p>
  <div class="row"><button class="btn big" value="cancel">Cancelar</button><button class="btn big primary" id="expOk" value="ok">Compartilhar</button></div>
  <button class="btn" id="expDl" value="dl">Só baixar o arquivo</button>
+</form></dialog>
+<dialog id="zeroDlg"><form method="dialog">
+ <h3 class="warn">⚠ Atenção</h3><p class="warn" id="zeroMsg" style="font-weight:bold"></p>
+ <div class="row"><button class="btn big primary" value="cancel" autofocus>Cancelar</button><button class="btn big" value="ok" style="background:#b71c1c;color:#fff">Continuar</button></div>
 </form></dialog>
 <dialog id="menuDlg"><form method="dialog">
  <button class="btn big" value="new">Nova contagem (apaga a atual)</button>

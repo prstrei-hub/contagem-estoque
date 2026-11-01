@@ -53,9 +53,11 @@ $('scan').onclick=startScan;$('scanClose').onclick=stopScan;$('scanDlg').addEven
 // Export
 $('export').onclick=function(){var c=state.items.filter(function(i){return i.contado!=null}).length;$('incl').checked=false;$('inclWarn').hidden=true;
  $('expInfo').textContent=c+' item(ns) contado(s) serão exportados. Itens não contados ficam de fora e o estoque deles não é alterado.';$('expDlg').returnValue='';$('expDlg').showModal()};
-$('incl').onchange=function(){$('inclWarn').hidden=!this.checked};
+function uncountedN(){return state.items.filter(function(i){return i.contado==null}).length}
+$('incl').onchange=function(){$('inclWarn').hidden=!this.checked;$('inclWarn').textContent='⚠ '+uncountedN()+' itens não contados serão enviados com quantidade 0 e marcados como Conferido. Se você clicar em Atualizar cadastros no Clipp, o estoque deles será ZERADO.'};
+function confirmZero(){return new Promise(function(res){var d=$('zeroDlg');$('zeroMsg').textContent='⚠ '+uncountedN()+' itens não contados serão enviados com quantidade 0 e marcados como Conferido. Se você clicar em Atualizar cadastros no Clipp, o estoque deles será ZERADO. Continuar?';d.returnValue='cancel';d.addEventListener('close',function(){res(d.returnValue==='ok')},{once:true});d.showModal()})}
 $('expDlg').addEventListener('close',async function(){var rv=$('expDlg').returnValue;if(rv!=='ok'&&rv!=='dl')return;
- if($('incl').checked&&!confirm('Confirma incluir itens não contados com quantidade 0? Isso pode ZERAR o estoque deles no Clipp.'))return;
+ if($('incl').checked&&uncountedN()>0&&!(await confirmZero()))return;
  var name=Core.fileName(),data=Core.buildExport(state,{fileName:name,includeUncounted:$('incl').checked});
  if(!data.items.length){alert('Nenhum item contado para exportar.');return}
  var txt=JSON.stringify(data,null,2),blob=new Blob([txt],{type:'application/json'});
