@@ -1,0 +1,671 @@
+{
+  "id": "ff8b2e12-2ff6-4519-9a47-b1b434bd0892",
+  "list_name": "conferencia_2026111_182044",
+  "items": [
+    {
+      "codigo": "5545",
+      "descricao": "AZEITE 500ML ANDORINHA EXTR.VIRGEM",
+      "quantidade": 10,
+      "preco": 32.8,
+      "conferred": false
+    },
+    {
+      "codigo": "2274",
+      "descricao": "OLEO DE SOJA VITALIV 900 ML",
+      "quantidade": 5,
+      "preco": 8.95,
+      "conferred": false
+    },
+    {
+      "codigo": "6775",
+      "descricao": "PESSEGO EM CALDA 450G SCHRAMM LT",
+      "quantidade": 0,
+      "preco": 14.85,
+      "conferred": true
+    },
+    {
+      "codigo": "5561",
+      "descricao": "LEITE COND BAG 5KG TRIANGULO",
+      "quantidade": 20,
+      "preco": 41.8,
+      "conferred": false
+    },
+    {
+      "codigo": "4103",
+      "descricao": "CEREJA EM CALDA 100G VD OLÉ",
+      "quantidade": 0,
+      "preco": 14.2,
+      "conferred": false
+    },
+    {
+      "codigo": "1608",
+      "descricao": "ÓLEO DE SOJA CONCÓRDIA 900 ML",
+      "quantidade": 0,
+      "preco": 8.75,
+      "conferred": false
+    },
+    {
+      "codigo": "5232",
+      "descricao": "VINAGRE  ALCOOL BCO BELMONT",
+      "quantidade": 0,
+      "preco": 1.79,
+      "conferred": false
+    },
+    {
+      "codigo": "5233",
+      "descricao": "VINAGRE ALCOOL COLOR BELMONT",
+      "quantidade": 0,
+      "preco": 1.79,
+      "conferred": false
+    },
+    {
+      "codigo": "5234",
+      "descricao": "VINAGRE VINHO TINTO BELMONT",
+      "quantidade": 0,
+      "preco": 3.15,
+      "conferred": false
+    },
+    {
+      "codigo": "5236",
+      "descricao": "VINAGRE DE ALHO BELMONT 750 ML",
+      "quantidade": 0,
+      "preco": 5.25,
+      "conferred": false
+    },
+    {
+      "codigo": "491",
+      "descricao": "ABACAXI TRIANGULO EM CALDA 400G",
+      "quantidade": 0,
+      "preco": 19.5,
+      "conferred": true
+    },
+    {
+      "codigo": "4893",
+      "descricao": "EXTRATO TOMATE PELADO LT 240G OLÉ CUBOS",
+      "quantidade": 0,
+      "preco": 5.9,
+      "conferred": false
+    },
+    {
+      "codigo": "1661",
+      "descricao": "PESSEGO EM CALDA 450G OLE",
+      "quantidade": 0,
+      "preco": 13.2,
+      "conferred": false
+    },
+    {
+      "codigo": "7489",
+      "descricao": "ATUM RALADO 140G 88",
+      "quantidade": 0,
+      "preco": 7.99,
+      "conferred": false
+    },
+    {
+      "codigo": "7492",
+      "descricao": "KETCHUP 830G PREDILECTA TRAD",
+      "quantidade": 0,
+      "preco": 6.9,
+      "conferred": false
+    },
+    {
+      "codigo": "2695",
+      "descricao": "SELETA DE LEGUMES 170G LT OLÉ",
+      "quantidade": 0,
+      "preco": 3.7,
+      "conferred": false
+    },
+    {
+      "codigo": "4151",
+      "descricao": "KETCHUP OLE 200G TRADICIONAL",
+      "quantidade": 0,
+      "preco": 4.5,
+      "conferred": false
+    },
+    {
+      "codigo": "3157",
+      "descricao": "MOLHO DE ALHO ARRIFANA 150 ML",
+      "quantidade": 0,
+      "preco": 3.4,
+      "conferred": false
+    },
+    {
+      "codigo": "4617",
+      "descricao": "MOLHO REFOGADO 240G QUERO",
+      "quantidade": 0,
+      "preco": 1.7,
+      "conferred": false
+    },
+    {
+      "codigo": "3215",
+      "descricao": "LEITE COND MOÇA SEMIDESNATADO TP 395 GRS",
+      "quantidade": 0,
+      "preco": 6.99,
+      "conferred": false
+    },
+    {
+      "codigo": "4216",
+      "descricao": "AZEITONA 500G RIVOLI VIDRO",
+      "quantidade": 0,
+      "preco": 15.9,
+      "conferred": false
+    },
+    {
+      "codigo": "590",
+      "descricao": "ATUM RALADO 170G GOMES DA COSTA",
+      "quantidade": 0,
+      "preco": 8.8,
+      "conferred": false
+    },
+    {
+      "codigo": "594",
+      "descricao": "AZEITE 200ML COMPOSTO MARIA",
+      "quantidade": 0,
+      "preco": 12.6,
+      "conferred": false
+    },
+    {
+      "codigo": "595",
+      "descricao": "AZEITE ANDORINHA 250ML EXT.VIRGEM",
+      "quantidade": 0,
+      "preco": 19.9,
+      "conferred": false
+    },
+    {
+      "codigo": "596",
+      "descricao": "AZEITE 500ML BORGES EXTRA VIRGEM",
+      "quantidade": 0,
+      "preco": 33.9,
+      "conferred": false
+    },
+    {
+      "codigo": "597",
+      "descricao": "AZEITE 500ML GALLO EXT.VIRGEM CLASSICO",
+      "quantidade": 0,
+      "preco": 36.4,
+      "conferred": false
+    },
+    {
+      "codigo": "598",
+      "descricao": "AZEITE GALLO 500ML EXT.VIRGEM",
+      "quantidade": 0,
+      "preco": 33.7,
+      "conferred": false
+    },
+    {
+      "codigo": "601",
+      "descricao": "AZEITE ANDORINHA PURO VD 500ML",
+      "quantidade": 0,
+      "preco": 38,
+      "conferred": false
+    },
+    {
+      "codigo": "2151",
+      "descricao": "KETCHUP GALÃO 3KG - LANCHEIRO",
+      "quantidade": 0,
+      "preco": 16.99,
+      "conferred": false
+    },
+    {
+      "codigo": "7807",
+      "descricao": "AMEIXA SECA OLÉ 150G LT - OLÉ",
+      "quantidade": 0,
+      "preco": 6.75,
+      "conferred": false
+    },
+    {
+      "codigo": "5754",
+      "descricao": "MOLHO REFOGADO 2440G HEINZ TRAD",
+      "quantidade": 0,
+      "preco": 2.5,
+      "conferred": false
+    },
+    {
+      "codigo": "2840",
+      "descricao": "MOLHO SHOYU MARATA  150ML",
+      "quantidade": 0,
+      "preco": 3.4,
+      "conferred": false
+    },
+    {
+      "codigo": "1313",
+      "descricao": "CREME DE LEITE 200ML MOCOCA MIST",
+      "quantidade": 0,
+      "preco": 2.05,
+      "conferred": false
+    },
+    {
+      "codigo": "2175",
+      "descricao": "MILHO VERDE OLÉ LATA 170G - OLÉ",
+      "quantidade": 0,
+      "preco": 3.2,
+      "conferred": false
+    },
+    {
+      "codigo": "7589",
+      "descricao": "PESSEGO EM CALDA 450G SCHRAMM",
+      "quantidade": 0,
+      "preco": 12.6,
+      "conferred": false
+    },
+    {
+      "codigo": "994",
+      "descricao": "ERVILHA LATA 170 G - OLE",
+      "quantidade": 0,
+      "preco": 2.5,
+      "conferred": false
+    },
+    {
+      "codigo": "1878",
+      "descricao": "SALSICHA 180G LT - BORDON",
+      "quantidade": 0,
+      "preco": 5.1,
+      "conferred": false
+    },
+    {
+      "codigo": "3977",
+      "descricao": "MILHO E ERVILHA DUETO 170G LT FUGINI",
+      "quantidade": 0,
+      "preco": 4.54,
+      "conferred": false
+    },
+    {
+      "codigo": "3631",
+      "descricao": "MOLHO INGLES MARATA GOTA 150 ML",
+      "quantidade": 0,
+      "preco": 3.4,
+      "conferred": false
+    },
+    {
+      "codigo": "1882",
+      "descricao": "SARDINHA OLEO COQUEIRO",
+      "quantidade": 0,
+      "preco": 6.2,
+      "conferred": false
+    },
+    {
+      "codigo": "1883",
+      "descricao": "SARDINHA OLEO GOMES DA COSTA",
+      "quantidade": 0,
+      "preco": 6.6,
+      "conferred": false
+    },
+    {
+      "codigo": "1015",
+      "descricao": "EXTRATO DE TOMATE 130G ELEFANTE LT",
+      "quantidade": 0,
+      "preco": 4.3,
+      "conferred": false
+    },
+    {
+      "codigo": "1016",
+      "descricao": "EXTRATO DE TOMATE ELEFANTE PT 300 GRS",
+      "quantidade": 0,
+      "preco": 7.9,
+      "conferred": false
+    },
+    {
+      "codigo": "2909",
+      "descricao": "AZEITE GALLO 250ML EXT.VIRGEM TIPO UNICO",
+      "quantidade": 0,
+      "preco": 28.5,
+      "conferred": false
+    },
+    {
+      "codigo": "7847",
+      "descricao": "PESSEGO EM CALDA 450G SCHRAMM",
+      "quantidade": 0,
+      "preco": 12.6,
+      "conferred": false
+    },
+    {
+      "codigo": "2227",
+      "descricao": "AZEITE GALLO 250ML EXT.VIRGEM",
+      "quantidade": 0,
+      "preco": 20.8,
+      "conferred": false
+    },
+    {
+      "codigo": "5832",
+      "descricao": "LEITE COND BAG 2,5KG ITALAC SEMI",
+      "quantidade": 0,
+      "preco": 32,
+      "conferred": false
+    },
+    {
+      "codigo": "2250",
+      "descricao": "MILHO VERDE 170G LT PREDILECTA",
+      "quantidade": 0,
+      "preco": 2.99,
+      "conferred": false
+    },
+    {
+      "codigo": "2255",
+      "descricao": "AMEIXA EM CALDA OLÉ 150G LT - OLÉ",
+      "quantidade": 0,
+      "preco": 6.75,
+      "conferred": false
+    },
+    {
+      "codigo": "7876",
+      "descricao": "MOLHO DE PIMENTA 150ML KNORR",
+      "quantidade": 0,
+      "preco": 8.4,
+      "conferred": false
+    },
+    {
+      "codigo": "3689",
+      "descricao": "MOLHO REFOGADO 300G TARANTELLA TRADICIONAL",
+      "quantidade": 0,
+      "preco": 1.99,
+      "conferred": false
+    },
+    {
+      "codigo": "1884",
+      "descricao": "SARDINHA M.TOMATE GOMES DA COSTA",
+      "quantidade": 0,
+      "preco": 6.6,
+      "conferred": false
+    },
+    {
+      "codigo": "1023",
+      "descricao": "FEIJOADA 430G LT BORDON",
+      "quantidade": 0,
+      "preco": 11.8,
+      "conferred": false
+    },
+    {
+      "codigo": "1024",
+      "descricao": "FEIJOADA 830G LT BORDON",
+      "quantidade": 0,
+      "preco": 24.3,
+      "conferred": false
+    },
+    {
+      "codigo": "1025",
+      "descricao": "FERMENTO BIOLOGICO 10G D.BENTA",
+      "quantidade": 0,
+      "preco": 1.2,
+      "conferred": false
+    },
+    {
+      "codigo": "1026",
+      "descricao": "FERMENTO EM PO 100G ROYAL",
+      "quantidade": 0,
+      "preco": 3.5,
+      "conferred": false
+    },
+    {
+      "codigo": "7090",
+      "descricao": "MOLHO DE PIMENTA 150ML GOTA",
+      "quantidade": 0,
+      "preco": 4.3,
+      "conferred": false
+    },
+    {
+      "codigo": "7091",
+      "descricao": "MOLHO DE PIMENTA 150ML OLÉ",
+      "quantidade": 0,
+      "preco": 2.5,
+      "conferred": false
+    },
+    {
+      "codigo": "4813",
+      "descricao": "EXTRATO ELEFANTE POTE 300G STROGONOFF",
+      "quantidade": 0,
+      "preco": 7.6,
+      "conferred": false
+    },
+    {
+      "codigo": "4814",
+      "descricao": "EXTRATO ELEFANTE POTE 300G CARNE DE PANELA",
+      "quantidade": 0,
+      "preco": 7.6,
+      "conferred": false
+    },
+    {
+      "codigo": "4035",
+      "descricao": "AZEITE 500ML COMPOSTO MARIA",
+      "quantidade": 0,
+      "preco": 17.5,
+      "conferred": false
+    },
+    {
+      "codigo": "5937",
+      "descricao": "MOSTARDA OLÉ 180G BISNAGA",
+      "quantidade": 0,
+      "preco": 3.8,
+      "conferred": false
+    },
+    {
+      "codigo": "1478",
+      "descricao": "MOLHO REFOGADO 300G FUGINI",
+      "quantidade": 0,
+      "preco": 1.99,
+      "conferred": false
+    },
+    {
+      "codigo": "1485",
+      "descricao": "MOSTARDA HEINZ  255 GRS",
+      "quantidade": 0,
+      "preco": 17.35,
+      "conferred": false
+    },
+    {
+      "codigo": "1487",
+      "descricao": "MOSTARDA QUERO 190G",
+      "quantidade": 0,
+      "preco": 5.99,
+      "conferred": false
+    },
+    {
+      "codigo": "3068",
+      "descricao": "AMEIXA EM CALDA OLÉ 400G LATA",
+      "quantidade": 0,
+      "preco": 16.95,
+      "conferred": false
+    },
+    {
+      "codigo": "8230",
+      "descricao": "AZEITE 500ML COMPOSTO FAISÃO",
+      "quantidade": 0,
+      "preco": 9.5,
+      "conferred": true
+    },
+    {
+      "codigo": "8285",
+      "descricao": "LEITE COND 395G TP PIRACANJUBA",
+      "quantidade": 0,
+      "preco": 6.9,
+      "conferred": true
+    },
+    {
+      "codigo": "7946",
+      "descricao": "AZEITE 200ML COMPOSTO FAISÃO",
+      "quantidade": 0,
+      "preco": 7.2,
+      "conferred": false
+    },
+    {
+      "codigo": "1526",
+      "descricao": "KETCHUP QUERO 200G TRADICIONAL",
+      "quantidade": 0,
+      "preco": 4.7,
+      "conferred": false
+    },
+    {
+      "codigo": "1527",
+      "descricao": "KETCHUP QUERO 400G TRADICIONAL",
+      "quantidade": 0,
+      "preco": 6.8,
+      "conferred": false
+    },
+    {
+      "codigo": "1528",
+      "descricao": "KETCHUP HEINZ 397G",
+      "quantidade": 0,
+      "preco": 14.6,
+      "conferred": false
+    },
+    {
+      "codigo": "8374",
+      "descricao": "LEITE COND 340G MOÇA SEMIDESNATADO",
+      "quantidade": 0,
+      "preco": 6.99,
+      "conferred": true
+    },
+    {
+      "codigo": "8414",
+      "descricao": "OLEO DE GIRASSOL 900ML SOYA",
+      "quantidade": 0,
+      "preco": 14.8,
+      "conferred": true
+    },
+    {
+      "codigo": "6023",
+      "descricao": "AMEIXA EM CALDA OLE 130G LATA",
+      "quantidade": 0,
+      "preco": 6.85,
+      "conferred": false
+    },
+    {
+      "codigo": "1551",
+      "descricao": "LEITE COND MOCA  LT 395G",
+      "quantidade": 0,
+      "preco": 9.7,
+      "conferred": false
+    },
+    {
+      "codigo": "1552",
+      "descricao": "LEITE COND  MOCOCA  MIST LÁCTEA TP 395",
+      "quantidade": 0,
+      "preco": 4.1,
+      "conferred": false
+    },
+    {
+      "codigo": "1553",
+      "descricao": "LEITE COND CAMPOS JORDÃO 395G TP",
+      "quantidade": 0,
+      "preco": 5.3,
+      "conferred": false
+    },
+    {
+      "codigo": "1554",
+      "descricao": "LEITE COND TRIANGULO 395G MIST LACTEA",
+      "quantidade": 0,
+      "preco": 3.8,
+      "conferred": false
+    },
+    {
+      "codigo": "1555",
+      "descricao": "LEITE COND ITALAC SEMIDES. TP 395G",
+      "quantidade": 0,
+      "preco": 6.49,
+      "conferred": false
+    },
+    {
+      "codigo": "7965",
+      "descricao": "SALSICHA LT 180G ANGLO",
+      "quantidade": 0,
+      "preco": 4.95,
+      "conferred": true
+    },
+    {
+      "codigo": "6423",
+      "descricao": "EXTRATO TOMATE 300G ELEFANTE",
+      "quantidade": 0,
+      "preco": 7.6,
+      "conferred": false
+    },
+    {
+      "codigo": "6442",
+      "descricao": "OLEO DE SOJA COCAMAR 900 ML",
+      "quantidade": 0,
+      "preco": 7.9,
+      "conferred": false
+    },
+    {
+      "codigo": "6472",
+      "descricao": "AZEITONA POTE 200G FORNELLO",
+      "quantidade": 0,
+      "preco": 6.5,
+      "conferred": false
+    },
+    {
+      "codigo": "6473",
+      "descricao": "AZEITONA FATIADA 200G FORNELLO",
+      "quantidade": 0,
+      "preco": 7.5,
+      "conferred": false
+    },
+    {
+      "codigo": "6474",
+      "descricao": "AZEITONA 200G S/CAROCO FORNELLO",
+      "quantidade": 0,
+      "preco": 8.5,
+      "conferred": false
+    },
+    {
+      "codigo": "6476",
+      "descricao": "CHAMPIGNON FATIADO 100G FORNRLLO",
+      "quantidade": 0,
+      "preco": 6.5,
+      "conferred": false
+    },
+    {
+      "codigo": "6477",
+      "descricao": "CHAMPIGNON INTEIRO 100G FORNELLO",
+      "quantidade": 0,
+      "preco": 6.5,
+      "conferred": false
+    },
+    {
+      "codigo": "6478",
+      "descricao": "PIMENTA BIQUINHO 100G FORNELLO",
+      "quantidade": 0,
+      "preco": 9.3,
+      "conferred": false
+    },
+    {
+      "codigo": "6479",
+      "descricao": "PALMITO INTEIRO PUPUNHA VIDRO FORNELLO 300G",
+      "quantidade": 0,
+      "preco": 22.7,
+      "conferred": false
+    },
+    {
+      "codigo": "6480",
+      "descricao": "PALMITO 300G VIDRO FORNELLO PICADO",
+      "quantidade": 0,
+      "preco": 14.75,
+      "conferred": false
+    },
+    {
+      "codigo": "6481",
+      "descricao": "PALMITO 300G VIDRO FORNELLO RODELA",
+      "quantidade": 0,
+      "preco": 16.7,
+      "conferred": false
+    },
+    {
+      "codigo": "6504",
+      "descricao": "MAIONESE VIGOR 500G TRADICIONAL",
+      "quantidade": 0,
+      "preco": 6.75,
+      "conferred": false
+    },
+    {
+      "codigo": "6722",
+      "descricao": "PESSEGO EM CALDA 450G GB",
+      "quantidade": 0,
+      "preco": 13.3,
+      "conferred": false
+    },
+    {
+      "codigo": "8094",
+      "descricao": "SELETA DE LEGUMES 280G PREDILECTA",
+      "quantidade": 0,
+      "preco": 3.29,
+      "conferred": false
+    }
+  ]
+}

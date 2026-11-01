@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0d47a1"><title>Contagem de Estoque – Info Soluções</title>
+<link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icon-192.png"><link rel="stylesheet" href="app.css">
+</head><body>
+<header><h1>Contagem de Estoque</h1><small id="listName">Nenhuma lista</small></header>
+<main>
+ <section id="start" class="card">
+  <p>Carregue o arquivo exportado pelo Clipp (Estoque › Conferência de Estoque › Exportar) ou comece um lançamento manual.</p>
+  <label class="btn big primary">📂 Carregar arquivo do Clipp<input type="file" id="file" accept=".json,application/json,text/plain" hidden></label>
+  <button class="btn big" id="manual">✍️ Lançamento manual</button>
+ </section>
+ <section id="work" hidden>
+  <div class="row"><label class="sw"><input type="checkbox" id="fast"> Lançamento rápido (+1 por leitura)</label></div>
+  <div class="row"><input id="code" inputmode="text" placeholder="Código / código de barras" autocomplete="off"><button class="btn" id="go">OK</button></div>
+  <div class="row"><input id="q" type="search" placeholder="Buscar por código ou descrição"></div>
+  <div class="row stats" id="stats"></div>
+  <div class="row"><select id="filter"><option value="all">Todos</option><option value="counted">Contados</option><option value="pending">Não contados</option><option value="diff">Com diferença</option></select></div>
+  <ul id="list"></ul>
+ </section>
+</main>
+<nav id="bar" hidden>
+ <button class="btn big primary" id="scan">📷 Ler código</button>
+ <button class="btn big" id="export">📤 Exportar</button>
+ <button class="btn big" id="menu">⋯</button>
+</nav>
+<dialog id="qtyDlg"><form method="dialog">
+ <h3 id="qtyTitle"></h3><p id="qtyInfo"></p>
+ <input id="qtyDesc" placeholder="Descrição (item novo)" hidden>
+ <input id="qty" inputmode="decimal" placeholder="Quantidade (ex: 1,5)" autocomplete="off">
+ <label class="sw"><input type="radio" name="qm" value="add" checked> Somar</label>
+ <label class="sw"><input type="radio" name="qm" value="set"> Substituir</label>
+ <div class="row"><button class="btn big" value="cancel" formnovalidate>Cancelar</button><button class="btn big primary" id="qtyOk" value="ok">Gravar</button></div>
+</form></dialog>
+<dialog id="scanDlg"><div id="video-wrap"><video id="video" playsinline muted></video><div class="aim"></div></div>
+ <p id="scanMsg">Aponte para o código de barras</p>
+ <button class="btn big" id="scanClose">Cancelar</button></dialog>
+<dialog id="expDlg"><form method="dialog">
+ <h3>Exportar para o Clipp</h3><p id="expInfo"></p>
+ <label class="sw warn"><input type="checkbox" id="incl"> Incluir itens NÃO contados com quantidade 0</label>
+ <p class="warn" id="inclWarn" hidden>⚠️ Atenção: se você atualizar os cadastros no Clipp, o estoque desses itens será ZERADO.</p>
+ <div class="row"><button class="btn big" value="cancel">Cancelar</button><button class="btn big primary" id="expOk" value="ok">Compartilhar</button></div>
+ <button class="btn" id="expDl" value="dl">Só baixar o arquivo</button>
+</form></dialog>
+<dialog id="menuDlg"><form method="dialog">
+ <button class="btn big" value="new">Nova contagem (apaga a atual)</button>
+ <button class="btn big" value="cancel">Cancelar</button>
+ <p class="small">Versão 1.0 · dados ficam só neste celular.</p>
+</form></dialog>
+<div id="toast"></div>
+<script src="core.js"></script><script src="vendor/zxing.min.js" defer></script><script src="app.js" defer></script>
+</body></html>

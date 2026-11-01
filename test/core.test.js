@@ -1,0 +1,20 @@
+const assert=require('assert'),fs=require('fs'),C=require('../core.js');
+const exp=C.parseClipp('\uFEFF'+fs.readFileSync(__dirname+'/clipp_export_amostra.json','utf8'));
+assert.equal(exp.items.length,3);assert.equal(exp.items[1].estoque,-140);assert.equal(exp.items[0].contado,null);
+const ret=C.parseClipp(fs.readFileSync(__dirname+'/retorno_celular.json','utf8'));assert.ok(ret.items.length>50);
+assert.equal(C.parseNum('1,5'),1.5);assert.equal(C.parseNum('1.234,5'),1234.5);assert.equal(C.parseNum('2'),2);assert.ok(isNaN(C.parseNum('abc')));
+C.addCount(exp,'5545',1,'add');C.addCount(exp,'5545',1,'add');C.addCount(exp,'5545','0,5','add');assert.equal(C.find(exp,'5545').contado,2.5);
+C.addCount(exp,'5545','10','set');assert.equal(C.diff(C.find(exp,'5545')),-3);
+C.addCount(exp,'999','3','add','Novo');assert.equal(C.find(exp,'999').manual,true);
+assert.throws(()=>C.addCount(exp,'5545','-1','add'));
+assert.equal(C.search(exp,'leite').length,1);assert.equal(C.search(exp,'2274').length,1);
+const out=C.buildExport(exp,{fileName:C.fileName(new Date(2026,10,1,9,5,7))});
+assert.equal(out.list_name,'conferencia_20261101_090507.json');assert.match(out.id,/^[0-9a-f-]{36}$/);
+assert.equal(out.items.length,2);// só contados
+const sample=JSON.parse(fs.readFileSync(__dirname+'/retorno_celular.json','utf8'));
+assert.deepEqual(Object.keys(out).sort(),Object.keys(sample).sort());
+assert.deepEqual(Object.keys(out.items[0]).sort(),Object.keys(sample.items[0]).sort());
+assert.ok(out.items.every(i=>i.conferred===true&&typeof i.quantidade==='number'));
+const all=C.buildExport(exp,{includeUncounted:true});assert.equal(all.items.length,4);assert.equal(all.items.find(i=>i.codigo==='2274').quantidade,0);
+assert.ok(!JSON.stringify(out).startsWith('\uFEFF'));
+console.log('OK: todos os testes de core passaram');
