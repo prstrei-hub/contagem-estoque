@@ -12,30 +12,40 @@
   <button class="btn big" id="manual">✍️ Lançamento manual</button>
  </section>
  <section id="work" hidden>
-  <div class="row"><label class="sw"><input type="checkbox" id="fast"> Lançamento rápido (+1 por leitura)</label></div>
-  <div class="row"><input id="code" inputmode="text" placeholder="Código / código de barras" autocomplete="off"><button class="btn" id="go">OK</button></div>
-  <div class="row"><input id="q" type="search" placeholder="Buscar por código ou descrição"></div>
+  <div class="row"><label class="sw" for="fast"><input type="checkbox" id="fast"> Lançamento rápido (+1 por leitura)</label></div>
+  <div class="row"><label for="code" class="sr">Código</label><input id="code" inputmode="text" placeholder="Código / código de barras" autocomplete="off"><button class="btn" id="go">OK</button></div>
+  <div class="row"><label for="q" class="sr">Buscar</label><input id="q" type="search" placeholder="Buscar por código ou descrição"></div>
   <div class="row stats" id="stats"></div>
-  <div class="row"><select id="filter"><option value="all">Todos</option><option value="counted">Contados</option><option value="pending">Não contados</option><option value="diff">Com diferença</option></select></div>
+  <div class="row">
+   <select id="filter" aria-label="Filtrar lista"><option value="all">Todos</option><option value="counted">Contados</option><option value="pending">Não contados</option><option value="diff">Com diferença</option></select>
+   <select id="sort" aria-label="Ordenar lista"><option value="recent">Mais recentes</option><option value="code">Código</option><option value="desc">Descrição</option><option value="diff">Diferença</option></select>
+  </div>
   <ul id="list"></ul>
  </section>
 </main>
 <nav id="bar" hidden>
  <button class="btn big primary" id="scan">📷 Ler código</button>
+ <button class="btn big" id="undo" disabled>↩ Desfazer</button>
  <button class="btn big" id="export">📤 Exportar</button>
  <button class="btn big" id="menu">⋯</button>
 </nav>
 <dialog id="qtyDlg"><form method="dialog">
  <h3 id="qtyTitle"></h3><p id="qtyInfo"></p>
- <input id="qtyDesc" placeholder="Descrição (item novo)" hidden>
- <input id="qty" inputmode="decimal" placeholder="Quantidade (ex: 1,5)" autocomplete="off">
+ <label for="qtyDesc" class="sr">Descrição</label><input id="qtyDesc" placeholder="Descrição (item novo ou editar)" hidden>
+ <label for="qty" class="sr">Quantidade</label><input id="qty" inputmode="decimal" placeholder="Quantidade (ex: 1,5)" autocomplete="off" required>
  <label class="sw"><input type="radio" name="qm" value="add" checked> Somar</label>
  <label class="sw"><input type="radio" name="qm" value="set"> Substituir</label>
  <div class="row"><button class="btn big" value="cancel" formnovalidate>Cancelar</button><button class="btn big primary" id="qtyOk" value="ok">Gravar</button></div>
 </form></dialog>
-<dialog id="scanDlg"><div id="video-wrap"><video id="video" playsinline muted></video><div class="aim"></div></div>
+<dialog id="scanDlg">
+ <div id="video-wrap"><video id="video" playsinline muted></video><div class="aim"></div></div>
  <p id="scanMsg">Aponte para o código de barras</p>
- <button class="btn big" id="scanClose">Cancelar</button></dialog>
+ <p id="lastScan" class="small"></p>
+ <div class="row">
+  <button class="btn" id="torch" hidden>💡 Lanterna</button>
+  <button class="btn big" id="scanClose">Cancelar</button>
+ </div>
+</dialog>
 <dialog id="expDlg"><form method="dialog">
  <h3>Exportar para o Clipp</h3><p id="expInfo"></p>
  <label class="sw warn"><input type="checkbox" id="incl"> Incluir itens NÃO contados com quantidade 0</label>
@@ -49,9 +59,12 @@
 </form></dialog>
 <dialog id="menuDlg"><form method="dialog">
  <button class="btn big" value="new">Nova contagem (apaga a atual)</button>
+ <button class="btn big" value="backup">💾 Backup do progresso</button>
+ <button class="btn big" value="restore">📂 Restaurar progresso</button>
  <button class="btn big" value="cancel">Cancelar</button>
- <p class="small">Versão 1.0 · dados ficam só neste celular.</p>
+ <p class="small">Versão 1.1 · dados ficam só neste celular.</p>
 </form></dialog>
-<div id="toast"></div>
+<input type="file" id="restoreFile" accept=".json,application/json" hidden>
+<div id="toast" aria-live="polite"></div>
 <script src="core.js"></script><script src="vendor/zxing.min.js" defer></script><script src="app.js" defer></script>
 </body></html>

@@ -11,10 +11,20 @@ Endereço: https://prstrei-hub.github.io/contagem-estoque/
 4. Conte:
    - **📷 Ler código** usa a câmera. Com **Lançamento rápido** ligado, cada leitura soma +1. Desligado, você digita a quantidade (aceita vírgula, ex.: 1,5) e escolhe Somar ou Substituir.
    - Também dá para digitar o código no campo e tocar em OK. Toque num item da lista para corrigir.
-   - Itens que não estão na lista são aceitos e aparecem como "fora da lista".
+   - Itens que não estão na lista são aceitos e aparecem como "fora da lista" (descrição editável).
    - Sem arquivo, use **Lançamento manual**.
 5. **📤 Exportar** › Compartilhar (WhatsApp) ou "Só baixar o arquivo". Por padrão **só os itens contados** são exportados.
 6. **No Clipp:** Conferência de Estoque › **Importar** › **Importação via arquivo** › selecione o arquivo. Confira a "Qtd Coletada" antes de clicar em **Atualizar cadastros**.
+
+**Novidades (v1.1):**
+- Confirmação ao carregar novo arquivo se já houver contagem.
+- Botão **↩ Desfazer** (últimas 15 ações).
+- Lanterna no scanner (quando o celular permitir).
+- Ordenação da lista (recentes, código, descrição, diferença).
+- Edição de descrição de itens manuais.
+- Backup / Restaurar progresso (menu ⋯).
+- Destaque visual mais forte para itens com diferença.
+- Melhor acessibilidade (aria-live, labels).
 
 O progresso fica salvo no celular, mesmo se você fechar o navegador. Para começar outra contagem, use o menu ⋯ › Nova contagem.
 

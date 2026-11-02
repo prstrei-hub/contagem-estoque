@@ -37,6 +37,7 @@
     if (isNaN(q) || q < 0) throw new Error('Quantidade inválida');
     var it = find(state, code);
     if (!it) { it = { codigo: code, descricao: descricao || '(item não cadastrado na lista)', preco: 0, estoque: null, contado: null, manual: true }; state.items.push(it); }
+    else if (descricao && it.manual) it.descricao = descricao;
     it.contado = round3(mode === 'set' ? q : (it.contado || 0) + q);
     it.ts = Date.now();
     return it;
@@ -64,7 +65,7 @@
       if (it.contado == null && !opts.includeUncounted) return;
       items.push({ codigo: it.codigo, descricao: it.descricao, quantidade: it.contado == null ? 0 : it.contado, preco: it.preco || 0, conferred: true });
     });
-    return { id: opts.id || uuid(), list_name: name, items: items };
+    return { id: opts.id || uuid(), list_name: opts.listName || (state && state.list_name) || name, items: items };
   }
   var api = { parseNum: parseNum, parseClipp: parseClipp, addCount: addCount, find: find, diff: diff, search: search, buildExport: buildExport, fileName: fileName };
   if (typeof module !== 'undefined' && module.exports) module.exports = api; else root.Core = api;
